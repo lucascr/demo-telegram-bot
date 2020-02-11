@@ -49,11 +49,6 @@ bot.start(({ i18n, replyWithHTML }) => replyWithHTML(
       )
     ))
 
-bot.command('inciio', (ctx) => {
-    console.log("es: " + ctx.from.first_name);
-    ctx.i18n.locale('es');
-    return ctx.replyWithHTML("" + ctx.i18n.t('greeting'));
-}) 
 
   bot.on('callback_query', async ctx => {
     ctx.answerCbQuery();
