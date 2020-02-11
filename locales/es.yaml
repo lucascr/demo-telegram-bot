@@ -1,0 +1,1 @@
+greeting: Bienvenido al bot ${from.first_name} !
